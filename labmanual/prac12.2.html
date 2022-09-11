@@ -1,0 +1,47 @@
+<html>
+    <head>
+	<style>
+	body{
+	     background-color:cyan;
+	}
+	</style>
+    </head>
+    <body>
+        <h1>BMI caculator</h1>
+                <label for ="height">Height(cm)</label>
+                <input type="number" id="height"><br><br>
+
+                <label for="weight">Weight(kg)</label>
+                <input type="number" id="weight"><br><br>
+           
+            <button id="calculate" onclick="fun()">Calculate BMI</button>
+ 
+        <h2>Your BMI is :</h2>
+        <h2 id="value"></h2>
+        <h2>You are:</h2>
+        <h2 id="condition"></h2>
+        <script>
+            function fun(){
+                let h = document.getElementById('height').value;
+                let w = document.getElementById('weight').value;
+                h = h/100;
+                var BMI = (w/(h*h));
+                var status = '';
+                if (BMI <18.5){
+                    status = "Under Weight";
+                }
+                if(BMI >= 18.5 && BMI < 25){
+                    status = "Healthy";
+                }
+                if(BMI >= 25 && BMI <30){
+                    status = "Overweight";
+                }
+                if(BMI >= 30){
+                    status = "Obese";
+                }
+                document.getElementById('value').innerHTML=BMI;
+                document.getElementById('condition').innerHTML=status;
+            }
+        </script>
+    </body>
+</html>

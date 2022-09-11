@@ -1,0 +1,21 @@
+<html>
+<body><title>practical 14.2</title>
+    <script>
+        var num = prompt("Enter the number");
+        var str = 0,
+            rem;
+        var temp = num;
+        while (num > 0) {
+            rem = num % 10;
+            num = parseInt(num / 10);
+            str = str * 10 + rem;
+        }
+
+        if (temp == str) {
+            alert("Your Number is Pallindrome");
+        } else {
+            alert("Your Number is not Pallindrome");
+        }
+    </script>
+</body>
+</html>

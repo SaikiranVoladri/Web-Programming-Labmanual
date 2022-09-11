@@ -1,0 +1,80 @@
+<html>
+    <head> <title> practical 9</title>
+    <link rel="stylesheet" href="styles.css">  
+    </head>
+    <h2 style ="color:rgb(255, 0, 4)" > 
+        <center><b> Student registration form</b> </center> 
+    </h2>
+     
+
+   <body bgcolor="pink">
+    
+    <style>
+        body {background-color: rgb(195, 226, 23);
+        border: 2px black;}
+        
+        h4   {color: blue;}
+        p    {color: rgb(0, 13, 255);}
+        </style> 
+     
+
+    <form>
+        <center>
+    <h2> NAME</h2>    
+
+FIRSTNAME<text style="color:red" >* </text>  <br>  <input type="textarea" required  > <br>
+MIDDLE NAME  <br><input type="textarea"> <br>
+LAST NAME   <br><input type="textarea"> <br>
+
+<h2><b>CHOOSE GENDER</b></h2>
+<input type="radio" value ="male" name ="gender"> MALE <br>
+<input type="radio" value ="female" name ="gender"> FEMALE <br>
+
+<h2><b>ADDRESS</b></h2>
+<textarea rows="2" cols="20"> Enter address </textarea>
+<h2><b>PHONE NUMBER<text style="color:red" >* </text></b></h2>
+<select>
+ <option value="+91" name="number">+91</option>
+ <option value="+21" name="number">+21</option>
+ <option value="+89" name="number">+89</option>
+ <option value="+62" name="number">+62</option>
+<input type="text" value="XXXXXXXXXX" name="number">
+</select>
+<h2><b>EMAIL ID</b></h2>
+<input type="text" value="example@.com">
+<h2><b>HOBBIES</b></h2>
+<input type="checkbox" value="running " name="hobbies" required>running
+<input type="checkbox" value="swimming " name="hobbies">swimming
+<input type="checkbox" value="cycling " name="hobbies">cycling
+<h2><b>EXTRA STUFF</b></h2>
+<p><b>city</b>
+<select>
+    <option value="surat" name="city">surat</option>
+    <option value="hyderabad" name="city">hyderabad</option>
+    <option value="delhi" name="city">delhi</option>
+    <option value="chennai" name="city">chennai</option>
+    <option  value="other" name="city">other<input type="text" value="if other type your city"> </option> 
+</select>
+<b>state</b><select>
+    <option value="tg" name="city">tg</option>
+    <option value="ap" name="city">ap</option>
+    <option  value="other" name="city">other<input type="text" value="OTHER"> </option> 
+<p><b>country</b><select>
+    <option value="ind" name="city">ind</option>
+    <option value="us" name="city">us</option>
+    <option  value="other" name="city">other<input type="text" value="OTHER"> </option> 
+</select>
+
+</p><p><b>college name</b>
+<select><option value="BITS" name="college">BITS</option>
+    <option value="PARUL" name="college">PARUL</option>
+    <option value="CMR" name="college">CMR</option>
+    <option value="SR" name="college">SR</option>
+    <option  value="other" name="college">other<input type="text"   value="if other type your COLLEGE NAME"> </option> 
+</select>
+</center>
+ <center><h3><input type="submit" value="submit"></h3></center>
+
+</form>
+</body>
+</html>

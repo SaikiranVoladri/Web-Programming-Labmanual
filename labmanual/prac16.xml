@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="01.xsl" type="text/xsl"?>
+<CD_CATLOGUE>
+    <CD>
+        <title>Kalvathi</title>
+        <singer>Sid Sriram</singer>
+        <genre>Dance/Electronic</genre>
+        <year>2022</year>
+    </CD>
+    <CD>
+        <title>Rakkamma</title>
+        <singer>Mangli</singer>
+        <genre>folk</genre>
+        <year>2022</year>
+    </CD>
+    <CD>
+        <title>Arabic Kutthu</title>
+        <singer>Anirudh</singer>
+        <genre>pop</genre>
+        <year>2022</year>
+    </CD>
+    <CD>
+        <title>kesaria</title>
+        <singer>Sid sriram</singer>
+        <genre>melody</genre>
+        <year>2022</year>
+    </CD>
+    <CD>
+        <title>jai ganesha</title>
+        <singer>ar Rehman</singer>
+        <genre>folk</genre>
+        <year>2021</year>
+    </CD>
+    <CD>
+        <title>Dj tillu</title>
+        <singer>Ram Miryala</singer>
+        <genre>Dance,Folk</genre>
+        <year>2021</year>
+    </CD>
+    <CD>
+        <title>Naatu Naatu</title>
+        <singer>Kala Bairava</singer>
+        <genre>Dance/Electronic, pop</genre>
+        <year>2022</year>
+    </CD>
+    <CD>
+        <title>hey sita</title>
+        <singer>Bala subramanyam</singer>
+        <genre>melody</genre>
+        <year>2020</year>
+    </CD>
+    
+</CD_CATLOGUE>

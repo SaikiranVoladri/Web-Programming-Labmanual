@@ -1,0 +1,142 @@
+<html>
+    <head><title>practicle 11</title>
+    <style>
+        body{
+            background-color: cyan;
+        }
+        h1{
+            border: 2px solid none;
+            width: fit-content;
+            background-color: orangered;
+        }
+        h2{
+            border: 2px solid none;
+            width: fit-content;
+            background-color:cadetblue;
+            color:black;
+        }
+        p{
+            width: fit-content;
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+    </style></head>
+    <body>
+        <h1>Array Methods:</h1>
+        <h2>push():</h2>
+        <p id="push"></p>
+        <p id="pushafter"></p>
+        <button onclick="push()">click here</button>
+
+        <h2>pop():</h2>
+        <p id="pop"></p>
+        <p id="popafter"></p>
+        <button onclick="pop()">click here</button>
+       
+        <h2>shift():</h2>
+        <p id="shift"></p>
+        <p id="shiftafter"></p>
+        <button onclick="shift()">click here</button>
+       
+        <h2>unshift():</h2>
+        <p id="unshift"></p>
+        <p id="unshiftafter"></p>
+        <button onclick="unshift()">click here</button>
+        
+        <h2>splice():</h2>
+        <p id="splice"></p>
+        <p id="spliceafter"></p>
+        <button onclick="splice()">click here</button>
+     
+        <h2>slice():</h2>
+        <p id="slice"></p>
+        <p id="sliceafter"></p>
+        <button onclick="slice()">click here</button>
+
+        <script>
+            function push(){
+                var fruits = ['Mango','Citrus','Banana'];
+                document.getElementById('push').innerHTML=fruits;
+                fruits.push('Coconut');
+                document.getElementById('pushafter').innerHTML=fruits;
+            }
+            function pop(){
+                var fruits = ['Mango','Citrus','Coconut','Banana'];
+                document.getElementById('pop').innerHTML=fruits;
+                fruits.pop();
+                document.getElementById('popafter').innerHTML=fruits;
+            }
+            function shift(){
+                var fruits = ['Mango','Citrus','Banana','Coconut'];
+                document.getElementById('shift').innerHTML=fruits;
+                fruits.shift();
+                document.getElementById('shiftafter').innerHTML=fruits;
+            }
+            function unshift(){
+                var fruits = ['Citrus','Banana','Mango'];
+                document.getElementById('unshift').innerHTML=fruits;
+                fruits.unshift('Coconut');
+                document.getElementById('unshiftafter').innerHTML=fruits;
+            }
+            function splice(){
+                var fruits = ['Mango','Citrus','Banana'];
+                document.getElementById('splice').innerHTML=fruits;
+                fruits.splice(2,0,'Coconut','Guava');
+                document.getElementById('spliceafter').innerHTML=fruits;
+            }
+            function slice(){
+                var fruits = ['Mango','Citrus','Coconut','Banana'];
+                document.getElementById('slice').innerHTML=fruits;
+                document.getElementById('sliceafter').innerHTML=fruits.slice(1,3);
+            }
+        </script>
+		 <h1>Date Methods:</h1>
+        <h2>getFullYear():</h2>
+        <p id="getfullyear"></p>
+        <button onclick="getfullyear()">click here</button>
+
+        <h2>getHours():</h2>
+        <p id="gethours"></p>
+        <button onclick="getHours()">click here</button>
+
+        <h2>getDay()</h2>
+        <p id="getday"></p>
+        <button onclick="getDay()">click here</button>
+        <script>
+            function getfullyear(){
+                var d = new Date();
+                document.getElementById('getfullyear').innerHTML = d.getFullYear();
+            }
+            function getHours(){
+                var d = new Date();
+                document.getElementById('gethours').innerHTML = d.getHours();
+            }
+            function getDay(){
+                var d = new Date();
+                switch (d.getDay()){
+                    case 0:
+                        document.getElementById('getday').innerHTML='Sunday';
+                        break;
+                    case 1: 
+                        document.getElementById('getday').innerHTML='Monday';
+                        break;
+                    case 2:
+                        document.getElementById('getday').innerHTML='Tuesday';
+                        break;
+                    case 3:
+                        document.getElementById('getday').innerHTML='Wednesday';
+                        break;
+                    case 4: 
+                        document.getElementById('getday').innerHTML='Thrusday';
+                        break;
+                    case 5:
+                        document.getElementById('getday').innerHTML='Friday';
+                        break;
+                    case 6:
+                        document.getElementById('getday').innerHTML='Saturday';
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

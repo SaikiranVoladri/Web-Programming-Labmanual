@@ -1,0 +1,49 @@
+. <html>
+    <body><title>practical 12</title>
+        <h1>HIT OR MISSED</h1>
+        <button onclick="fun()">click here</button>
+        <script>
+            function fun(){
+                var d = new Date();
+                var k = '';
+                switch (d.getDay()){
+                    case 0:
+                        k = 'sunday';
+                        break;
+                    case 1:
+                        k = 'monday';
+                        break;
+                    case 2:
+                        k = 'tuesday';
+                        break;
+                    case 3:
+                        k = 'wednesday';
+                        break;
+                    case 4:
+                        k = 'thursday';
+                        break;
+                    case 5:
+                        k = 'friday';
+                        break;
+                    case 6:
+                        k = 'saturday';
+                        break;
+                }
+                var a = prompt("Enter some week day:");
+                if(a != null && a != ''){
+                    if(confirm('press ok')){
+                    if (a.toLowerCase() == k){
+                        alert("HIT");
+                    }
+                    else{
+                        alert("MISSED");
+                    }
+                }
+                }
+                else{
+                    alert("Field should not be empty..Enter week day!!!!");
+                }
+            }
+        </script>
+    </body>
+</html>

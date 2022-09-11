@@ -1,0 +1,73 @@
+<html>
+<head><title>practical 10</title>
+<link rel="stylesheet" type="text/css" href=" C:\Users\hp\Desktop\html\bala. css">
+<style> 
+div {
+  width: 200px;
+  height: 100px;
+  background-color: cyan;
+  border: 1px solid black;
+  }
+div#myDiv{
+  transform: translate(100px,10px);
+}
+div#Div2{
+  transform: rotate(45deg);
+}
+div#Div3{
+  transform: scale(0.5, 0.5);
+}
+div#Div4{
+  transform: skew(15deg, 45deg);
+}
+div#Div5{
+  transform: matrix(1, 0.5, 0, 0.3, 1, 0);
+}
+ 
+</style>
+</head>
+<body>
+<h2 style="color:Green;font-size:20px;text-align:center">2D Transformation methods</h2>
+<h1>translate() Method</h1>
+<div>
+This is normal position
+</div>
+<div id="myDiv">
+This div element is moved 100 pixels to the right, and 10 pixels down from its current position.
+</div>
+<br>
+<h1>rotate method()</h1>
+<div>
+Normal position.
+</div>
+<div id="Div2">
+This is after rotating 45 degrees.
+</div>
+<br><br>
+<h1>Scale method()</h1>
+<div>
+Normal position.
+</div>
+<div id="Div3">
+It is 0.5 times of original width and 0.5 times of its original height.
+</div>
+<br><br>
+<h1>Skew method()</h1>
+<div>
+Normal position.
+</div>
+<div id="Div4">
+This skewed 15degrees along the x-axis and 45 degrees along the y-axis.
+</div>
+<br><br><br><br>
+<h1>Matrix method()</h1>
+<div>
+Normal position.
+</div>
+<div id="Div5">
+After using matrix method.
+</div>
+
+
+</body>
+</html>
